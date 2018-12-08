@@ -5,7 +5,8 @@ to communicate between squads in game. Most gaming VOIP tools have a CC or
 whisper function. Except Discord. So this bot adds CC functionality (sort of).
 
 You will need ONE (1) CC bot per user in CC and a channel for all the CC bots
-(and only the CC bots) to sit in.
+(and only the CC bots) to sit in. The bot **_MUST_** be run locally on the
+computer of the person who wants to be in CC.
 
 Installation
 ------------
