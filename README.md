@@ -33,7 +33,8 @@ discord (folder)
 cc_audio.py
 channel_commander.py
 channel_commander.txt
-...```
+...
+```
 
 Setting Up
 ----------
