@@ -16,7 +16,7 @@ is an easy way to get it for Windows, Mac and Linux.
 
 Once you have Python, download or clone this repository.
 
-You'll also nee the Discord Python API. The origional is avaliable on pip or
+You'll also need the Discord Python API. The origional is avaliable via pip or
 [GitHub](https://github.com/Rapptz/discord.py) but this bot needs some features
 that are in a pull request of the rewite but not merged and the pull request is
 behind the branch. So I forked discord.py and added the changes. You will need
@@ -44,7 +44,7 @@ four values **TOKEN**, **cc_id**, **cc_channel**, **cc_key**.
 
 * **cc_id** (I'll get back to **TOKEN**): should be a unique identifier. It is
 used to communicate with your (and only your) bot. So put in a unique value. I
-inivise numbers, but anything goes here.
+advise numbers, but anything can go here.
 
 * **cc_channel**: The name of the channel you will be using for CC. This channel
 is where all the CC bots will sit and talk to each other.
@@ -65,8 +65,8 @@ If you need a bot, follow this:
 and click on "Create Application". This will, as the name suggests, create an
 application that can use Discord's API. Give it a name and a nice avatar.
 2. Click on "Bot" and then "Add Bot"
-3. Click on "Copy" to copy your token and paste it into the **TOKEN** field in
-*channel_commander.txt*
+3. Click on "Copy" under "Token" to copy your token and paste it into the
+**TOKEN** field in *channel_commander.txt*
 
 Getting CC Bot into your server
 -------------------------------
