@@ -92,7 +92,8 @@ If all goes well, after a moment the command prompt/terminal should now read:
 client.user.name <Name_of_Bot>
 client.user.id <some numbers>
 Audio input at 48000Hz with 2 channels
-Audio output at 48000Hz with 2 channels```
+Audio output at 48000Hz with 2 channels
+```
 If it doesn't something has gone wrong. Try it all again maybe? I dunno...
 
 Once it's running, there are only a couple of commands. These are typed into
