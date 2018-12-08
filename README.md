@@ -37,6 +37,14 @@ channel_commander.txt
 ...
 ```
 
+You will need to install some Python packages: *aiohttp*, *websockets*, *pyaudio*
+and *keyboard*. These can be installed with **pip**. For Windows, open the start
+menu, type **cmd** and click on "Command Prompt". For Mac and Linux, open the
+terminal. Change directory to where you have downloaded the bot by typing
+**cd C:\path\to\bot** in Windows or **cd /path/to/bot** in Mac or Linux. Then
+type **pip install -r requirements.txt** and hit ENTER. pip will now install
+the libraries.
+
 Setting Up
 ----------
 The settings you will need to finalise are in *channel_commander.txt*. It has
