@@ -79,8 +79,24 @@ bot. If you aren't, send the link to someone who is.
 Using CC Bot
 ------------
 Now you've installed everything, updated *channel_commander.txt* and got the
-bot onto your server, it's time to use it! There are only a couple of
-commands. They all start with *!cc*
+bot onto your server, it's time to use it!
+
+To run the bot, open a command prompt/terminal. For Windows, open the start
+menu, type **cmd** and click on "Command Prompt". For Mac and Linux, open the
+terminal. Change directory to where you have downloaded the bot by typing
+**cd C:\path\to\bot** in Windows or **cd /path/to/bot** in Mac or Linux. Then
+type **python channel_commander.py** and hit ENTER.
+
+If all goes well, after a moment the command prompt/terminal should now read:
+```
+client.user.name <Name_of_Bot>
+client.user.id <some numbers>
+Audio input at 48000Hz with 2 channels
+Audio output at 48000Hz with 2 channels```
+If it doesn't something has gone wrong. Try it all again maybe? I dunno...
+
+Once it's running, there are only a couple of commands. These are typed into
+any of the channels of the server the bot is in and they all start with *!cc*
 
 * **!cc help**: Shows the help list incase you forget anything
 * **!cc list ids**: Shows cc_id (aka #) of **_ALL_** CC bots (so please don't
