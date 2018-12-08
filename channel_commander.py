@@ -4,12 +4,6 @@ import pyaudio
 import time
 
 #Discord Info
-#TODO - Set this to pull from a config file
-#TOKEN = 'NTE5MjIwMDc3OTgwMjg2OTg4.DucLCA.qx2zlHGoypsMuGUELh_tnL5JzRY'
-#cc_id = '0'
-#cc_channel = 'Channel Commander'
-#cc_key = 'alt'
-
 with open('channel_commander.txt', "r") as cc_txt:
 	lines = cc_txt.readlines()
 cc_txt.close()
