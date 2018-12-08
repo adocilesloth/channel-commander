@@ -28,12 +28,12 @@ into the same folder as channel_commander.py. For some reason, installing the
 library seems to break things but using it like this doesn't. Your
 channel-commander folder should look like this:
 
-'''
+```
 discord (folder)
 cc_audio.py
 channel_commander.py
 channel_commander.txt
-...'''
+...```
 
 Setting Up
 ----------
@@ -42,7 +42,7 @@ four values **TOKEN**, **cc_id**, **cc_channel**, **cc_key**.
 
 * **cc_id** (I'll get back to **TOKEN**): should be a unique identifier. It is
 used to communicate with your (and only your) bot. So put in a unique value. I
-inivised numbers, but anything goes here.
+inivise numbers, but anything goes here.
 
 * **cc_channel**: The name of the channel you will be using for CC. This channel
 is where all the CC bots will sit and talk to each other.
