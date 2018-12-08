@@ -1,0 +1,4 @@
+TOKEN: 
+cc_id: 1
+cc_channel: Channel Commander
+cc_key: q
