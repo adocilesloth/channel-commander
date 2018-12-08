@@ -97,7 +97,7 @@ Audio output at 48000Hz with 2 channels
 If it doesn't something has gone wrong. Try it all again maybe? I dunno...
 
 Once it's running, there are only a couple of commands. These are typed into
-any of the channels of the server the bot is in and they all start with *!cc*
+any of the channels of the server the bot is in and they all start with **!cc**
 
 * **!cc help**: Shows the help list incase you forget anything
 * **!cc list ids**: Shows cc_id (aka #) of **_ALL_** CC bots (so please don't
