@@ -48,11 +48,10 @@ the libraries.
 Setting Up
 ----------
 The settings you will need to finalise are in *channel_commander.txt*. It has
-four values **TOKEN**, **cc_id**, **cc_channel**, **cc_key**.
+four values **TOKEN**, **cc_name**, **cc_channel**, **cc_key**.
 
-* **cc_id** (I'll get back to **TOKEN**): should be a unique identifier. It is
-used to communicate with your (and only your) bot. So put in a unique value. I
-advise numbers, but anything can go here.
+* **cc_name** (I'll get back to **TOKEN**): The name that you use in the server
+you want to use the bot in. This allows only you to control the bot.
 
 * **cc_channel**: The name of the channel you will be using for CC. This channel
 is where all the CC bots will sit and talk to each other.
@@ -100,6 +99,7 @@ If all goes well, after a moment the command prompt/terminal should now read:
 ```
 client.user.name <Name_of_Bot>
 client.user.id <some numbers>
+Owned by <cc_name>
 Audio input at 48000Hz with 2 channels
 Audio output at 48000Hz with 2 channels
 ```
@@ -109,12 +109,10 @@ Once it's running, there are only a couple of commands. These are typed into
 any of the channels of the server the bot is in and they all start with **!cc**
 
 * **!cc help**: Shows the help list incase you forget anything
-* **!cc list ids**: Shows cc_id (aka #) of **_ALL_** CC bots (so please don't
-spam)
-* **!cc rename # new_name**: Changes CC #'s nickname to new_name
-* **!cc shutdown #**: Shuts down CC #
-* **!cc start #**: Connects CC # to cc_channel so it/you can speak and hear CC
-* **!cc stop #**: Disconnects CC # from cc_channel. May cause the bot to crash
+* **!cc rename new_name**: Changes CC bot's nickname to new_name
+* **!cc shutdown**: Shuts down CC bot
+* **!cc start**: Connects CC bot to cc_channel so it/you can speak and hear CC
+* **!cc stop**: Disconnects CC bot from cc_channel. May cause the bot to crash
 and I don't know why (yet).
 
 That's it. Get to it and rule the battlefield with your chums!

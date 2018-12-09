@@ -1,4 +1,4 @@
 TOKEN: 
-cc_id: 1
+cc_name: aka
 cc_channel: Channel Commander
-cc_key: q
+cc_key: alt
