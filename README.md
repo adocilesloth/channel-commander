@@ -19,7 +19,8 @@ For Windows specifically, it may be easier to get python from the
 You may also need Microsoft Visual C++ 14.0, which can be found with
 [Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/downloads/)
 or with this
-[Direct Download Link](https://aka.ms/vs/16/release/vs_buildtools.exe).
+[Direct Download Link](https://aka.ms/vs/16/release/vs_buildtools.exe). But
+using Anaconda will make installation easier.
 
 Once you have Python, download or clone this repository.
 
@@ -45,8 +46,8 @@ channel_commander.txt
 ```
 
 You will need to install some Python packages: *aiohttp*, *websockets*, *pyaudio*
-and *keyboard*. You can use **pip** to install these. *pyaudio* also need
-*portaudio*
+and *keyboard*. You can use **pip** to install these. *pyaudio* also needs
+*portaudio*.
 
 **Windows**
 
