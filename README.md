@@ -68,8 +68,8 @@ source (sorry). Instructions are on
 * If you did not install Anaconda but have Homebrew, type
 **brew install portaudio** and hit ENTER.
 * If you don't have Anaconda or homebrew, type
-**/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-** and hit ENTER to install homebrew. Then type **brew install portaudio** and
+** /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" **
+and hit ENTER to install homebrew. Then type **brew install portaudio** and
 hit ENTER.
 * Type **pip install -r requirements.txt** and hit ENTER
 
