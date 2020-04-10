@@ -14,6 +14,13 @@ This bot runs on Python. It works on Python 3.6 but Python 3.5.3 or better
 should work. If you need Python, [Anaconda](https://www.anaconda.com/download/)
 is an easy way to get it for Windows, Mac and Linux.
 
+For Windows specifically, it may be easier to get python from the
+[Microsoft Store](https://www.microsoft.com/en-us/p/python-38/9mssztt1n39l?activetab=pivot:overviewtab).
+You may also need Microsoft Visual C++ 14.0, which can be found with
+[Microsoft Visual C++ Build Tools](https://visualstudio.microsoft.com/downloads/)
+or with this
+[Direct Download Link](https://aka.ms/vs/16/release/vs_buildtools.exe).
+
 Once you have Python, download or clone this repository.
 
 You'll also need the Discord Python API. The origional is avaliable via pip or
@@ -38,12 +45,43 @@ channel_commander.txt
 ```
 
 You will need to install some Python packages: *aiohttp*, *websockets*, *pyaudio*
-and *keyboard*. These can be installed with **pip**. For Windows, open the start
-menu, type **cmd** and click on "Command Prompt". For Mac and Linux, open the
-terminal. Change directory to where you have downloaded the bot by typing
-**cd C:\path\to\bot** in Windows or **cd /path/to/bot** in Mac or Linux. Then
-type **pip install -r requirements.txt** and hit ENTER. pip will now install
-the libraries.
+and *keyboard*. You can use **pip** to install these. *pyaudio* also need
+*portaudio*
+
+**Windows**
+
+* Open the start menu, type **cmd** and click on "Command Prompt".
+* Change directory to where you have downloaded the bot by typing
+**cd C:\path\to\bot**
+* If you installed Anaconda, type **conda install portaudio** and hit ENTER
+* If you did not install Anaconda, you will have to build *portaudio* from
+source (sorry). Instructions are on
+[portaudio's webpages](http://portaudio.com/docs/v19-doxydocs/tutorial_start.html)
+* Type **pip install -r requirements.txt** and hit ENTER
+
+**MAC**
+
+* Open the launchpad, type **terminal** and click on "Terminal".
+* Change directory to where you have downloaded the bot by typeing
+**cd /path/to/bot**
+* If you installed Anaconda, type **conda install portaudio** and hit ENTER
+* If you did not install Anaconda but have Homebrew, type
+**brew install portaudio** and hit ENTER.
+* If you don't have Anaconda or homebrew, type
+**/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+** and hit ENTER to install homebrew. Then type **brew install portaudio** and
+hit ENTER.
+* Type **pip install -r requirements.txt** and hit ENTER
+
+**Linux**
+
+* Open the launchpad, type **terminal** and click on "Terminal".
+* Change directory to where you have downloaded the bot by typeing
+**cd /path/to/bot**
+* If you installed Anaconda, type **conda install portaudio** and hit ENTER
+* If you did not install Anaconda, type **sudo apt install portaudio19-dev** and
+hit ENTER.
+* Type **pip install -r requirements.txt** and hit ENTER
 
 Setting Up
 ----------
