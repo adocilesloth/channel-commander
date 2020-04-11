@@ -16,13 +16,13 @@ class audio_input():
 
         if OS() == 'Darwin':
             self.CHANNELS = 1
-            self.FORMAT = pyaudio.paInt16
             self.CHUNK = 1920
+            self.RATE = 96000
         else:
             self.CHANNELS = 2
-            self.FORMAT = pyaudio.paInt16
             self.CHUNK = 960
-        self.RATE = 48000
+            self.RATE = 48000
+        self.FORMAT = pyaudio.paInt16
         self.pAudio = pyaudio.PyAudio()
 
         #Run the input in a new thread
