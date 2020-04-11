@@ -47,7 +47,7 @@ channel_commander.txt
 
 You will need to install some Python packages: *aiohttp*, *websockets*, *pyaudio*,
 *keyboard* and *pynacl*. You can use **pip** to install these. *pyaudio* also needs
-*portaudio*.
+*portaudio*. You may also need the *opus* libraries to make everything work.
 
 **Windows**
 
@@ -59,6 +59,8 @@ You will need to install some Python packages: *aiohttp*, *websockets*, *pyaudio
 source (sorry). Instructions are on
 [portaudio's webpages](http://portaudio.com/docs/v19-doxydocs/tutorial_start.html)
 * Type **pip install -r requirements.txt** and hit ENTER.
+* If you need *opus*, you can get it from the
+[Opus Website](http://opus-codec.org/downloads/)
 
 **MAC**
 
@@ -73,6 +75,12 @@ source (sorry). Instructions are on
 and hit ENTER to install homebrew. Then type **brew install portaudio** and
 hit ENTER.
 * Type **pip install -r requirements.txt** and hit ENTER.
+* If you need *opus* and have Homebrew, type **brew install opus** and hit
+ENTER.
+* If you need *opus* and don't have Homebrew, type
+**/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"**
+and hit ENTER to install homebrew, then type **brew install opus** and hit
+ENTER.
 
 **Linux**
 
@@ -83,6 +91,7 @@ hit ENTER.
 * If you did not install Anaconda, type **sudo apt install portaudio19-dev** and
 hit ENTER.
 * Type **pip install -r requirements.txt** and hit ENTER.
+* If you need *opus*, type **sudo apt install libopus-dev** and hit ENTER.
 
 Setting Up
 ----------
