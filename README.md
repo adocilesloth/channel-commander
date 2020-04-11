@@ -45,44 +45,44 @@ channel_commander.txt
 ...
 ```
 
-You will need to install some Python packages: *aiohttp*, *websockets*, *pyaudio*
-and *keyboard*. You can use **pip** to install these. *pyaudio* also needs
+You will need to install some Python packages: *aiohttp*, *websockets*, *pyaudio*,
+*keyboard* and *pynacl*. You can use **pip** to install these. *pyaudio* also needs
 *portaudio*.
 
 **Windows**
 
 * Open the start menu, type **cmd** and click on "Command Prompt".
 * Change directory to where you have downloaded the bot by typing
-**cd C:\path\to\bot**
-* If you installed Anaconda, type **conda install portaudio** and hit ENTER
+**cd C:\path\to\bot**.
+* If you installed Anaconda, type **conda install portaudio** and hit ENTER.
 * If you did not install Anaconda, you will have to build *portaudio* from
 source (sorry). Instructions are on
 [portaudio's webpages](http://portaudio.com/docs/v19-doxydocs/tutorial_start.html)
-* Type **pip install -r requirements.txt** and hit ENTER
+* Type **pip install -r requirements.txt** and hit ENTER.
 
 **MAC**
 
 * Open the launchpad, type **terminal** and click on "Terminal".
 * Change directory to where you have downloaded the bot by typeing
-**cd /path/to/bot**
-* If you installed Anaconda, type **conda install portaudio** and hit ENTER
+**cd /path/to/bot**.
+* If you installed Anaconda, type **conda install portaudio** and hit ENTER.
 * If you did not install Anaconda but have Homebrew, type
 **brew install portaudio** and hit ENTER.
 * If you don't have Anaconda or homebrew, type
 **/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"**
 and hit ENTER to install homebrew. Then type **brew install portaudio** and
 hit ENTER.
-* Type **pip install -r requirements.txt** and hit ENTER
+* Type **pip install -r requirements.txt** and hit ENTER.
 
 **Linux**
 
 * Open the launchpad, type **terminal** and click on "Terminal".
 * Change directory to where you have downloaded the bot by typeing
-**cd /path/to/bot**
-* If you installed Anaconda, type **conda install portaudio** and hit ENTER
+**cd /path/to/bot**.
+* If you installed Anaconda, type **conda install portaudio** and hit ENTER.
 * If you did not install Anaconda, type **sudo apt install portaudio19-dev** and
 hit ENTER.
-* Type **pip install -r requirements.txt** and hit ENTER
+* Type **pip install -r requirements.txt** and hit ENTER.
 
 Setting Up
 ----------
@@ -95,8 +95,8 @@ you want to use the bot in. This allows only you to control the bot.
 * **cc_channel**: The name of the channel you will be using for CC. This channel
 is where all the CC bots will sit and talk to each other.
 
-* **cc_key**: Hot key for talking over CC. I think only keyboard keys will work.
-Using mouse keys is something I should look into at some point.
+* **cc_key**: Hot key for talking over CC as PTT. I think only keyboard keys
+will work. Using mouse keys is something I should look into at some point.
 
 * **TOKEN** (I said I'd get back to it): This is the unique token for your bot.
 Get if from your bot's page on
@@ -132,7 +132,8 @@ To run the bot, open a command prompt/terminal. For Windows, open the start
 menu, type **cmd** and click on "Command Prompt". For Mac and Linux, open the
 terminal. Change directory to where you have downloaded the bot by typing
 **cd C:\path\to\bot** in Windows or **cd /path/to/bot** in Mac or Linux. Then
-type **python channel_commander.py** and hit ENTER.
+type **python channel_commander.py** and hit ENTER. Mac may need root to run,
+if so type **sudo python channel_commander.py** and hit ENTER.
 
 If all goes well, after a moment the command prompt/terminal should now read:
 ```
@@ -153,5 +154,13 @@ any of the channels of the server the bot is in and they all start with **!cc**
 * **!cc start**: Connects CC bot to cc_channel so it/you can speak and hear CC
 * **!cc stop**: Disconnects CC bot from cc_channel. May cause the bot to crash
 and I don't know why (yet).
+
+Channel Commander
+-----------------
+Once you and your cronies have your CC Bots running, you will need to set up
+the channels properly. Put all of your CC Bots into a single channel so they
+can talk to each other. Then you can be somewhere else. When you press and hold
+your **cc_key** and talk, your voice will be broadcast by your CC Bot. The other
+CC Bots will hear this and broad cast your voice to their respective owners.
 
 That's it. Get to it and rule the battlefield with your chums!

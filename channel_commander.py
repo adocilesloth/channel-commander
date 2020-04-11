@@ -36,15 +36,15 @@ async def on_message(message):
     global audio_in
     global stream
     global pAudio
-    
+
     if message.author == client.user:
         #Ignore own messages
         return
-        
+
     elif message.author.display_name != cc_name:
         #Ignore anything not from owner
         return
-        
+
     elif message.content == '!cc help':
         #Print help
         msg = "Channel Commander Functions:\n"
@@ -54,20 +54,20 @@ async def on_message(message):
         msg += "\t!cc start\t\t\t\t\t\t\t- Connect to CC voice channel\n"
         msg += "\t!cc stop\t\t\t\t\t\t\t- Disconnect from CC voice channel\n"
         await message.channel.send(msg)
-        
+
     elif message.content.startswith('!cc rename'):
         #Change nickname of the Channel Commander
         new_name = message.content[11:]
         me = message.guild.me
         await me.edit(nick=new_name)
-    
+
     elif message.content == '!cc shutdown':
         #Shuts down Channel Commander
         audio_in.shutdown()
         stream.close()
         pAudio.terminate()
         await client.logout()
-            
+
     elif message.content == '!cc start':
         #Connect to Channel Commander voice channel
         if voice is None:
@@ -80,7 +80,7 @@ async def on_message(message):
         else:
             msg = "CC for "+cc_name+" is already started!"
             await message.channel.send(msg)
-                
+
     elif message.content == '!cc stop':
         #Disconnect from Channel Commander voice channel
         if voice is None:
@@ -91,7 +91,7 @@ async def on_message(message):
             audio_in.set_in_channel(False)
             await voice.disconnect(force=True)
             voice = None
-        
+
     return
 
 @client.event
@@ -108,6 +108,6 @@ async def on_ready():
     global audio_in
     audio_in = cc_audio.audio_input(cc_key)
     print("Audio output at {0}Hz with {1} channels".format(RATE, CHANNELS))
-    
+
 client.run(TOKEN)
 
